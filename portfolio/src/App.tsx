@@ -1,5 +1,4 @@
 import React from 'react';
-import Avatar from '@mui/material/Avatar';
 
 import { InfoCard } from './components/InfoCard'
 
@@ -80,7 +79,7 @@ function App() {
             heading="Kevin McQuate"
             body="Big Data and Software Engineer"
             className="bg-primary-main text-left"
-            image={<img className="h-44 w-44 rounded-full border-2 border-primary-light shadow-2xl" srcSet={process.env.PUBLIC_URL + "/profile.jpg"}/>}
+            image={<img className="h-44 w-44 rounded-full border-2 border-primary-light shadow-2xl" srcSet={process.env.PUBLIC_URL + "/profile.jpg"} alt='profile-picture'/>}
             imageLink='https://www.linkedin.com/in/kevin-mcquate/'
             logos={[
               process.env.PUBLIC_URL + "/github.png",

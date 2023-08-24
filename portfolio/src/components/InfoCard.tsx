@@ -30,6 +30,7 @@ export function InfoCard(
                     <img 
                         srcSet={image} 
                         className="rounded-lg h-44 w-44"
+                        alt={heading}
                     /> 
                     : image
                 }
@@ -49,7 +50,7 @@ export function InfoCard(
             <div className='grid grid-cols-3 items-center gap-x-4'>
               {logos.map((logo, i) => {
                 return <a href={logoLinks[i]} target='_blank' rel='noreferrer'>
-                        <img srcSet={logo} className='min-h-16 max-h-20'/>
+                        <img srcSet={logo} className='min-h-16 max-h-20' alt="logo"/>
                       </a> 
               })}
             </div>
