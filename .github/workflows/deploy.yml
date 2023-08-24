@@ -64,7 +64,7 @@ jobs:
     - name: SAM deploy
       run: >
         sam deploy 
-        --stack-name lake-freeze-frontend
+        --stack-name ${{ github.event.repository.name }}
         --region ${AWS_REGION}
         --no-fail-on-empty-changeset
         --capabilities CAPABILITY_AUTO_EXPAND
@@ -72,7 +72,7 @@ jobs:
         --s3-prefix ${{ github.event.repository.name }}
         --parameter-overrides 
         DomainName=${DOMAIN_NAME}
-        DomainTLSCertificateArn=arn:aws:acm:us-east-1:117819748843:certificate/e194c5a3-7805-4b80-9d4b-7e8dd85a683c
+        DomainTLSCertificateArn=arn:aws:acm:us-east-1:117819748843:certificate/54c6c2f2-5e3c-4ea1-b261-45921c827c36
         PublicS3BucketName=${PUBLIC_ZONE_BUCKET_NAME}
         PublicS3Prefix=${PUBLIC_ZONE_PREFIX}
 
