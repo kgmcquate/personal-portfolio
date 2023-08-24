@@ -46,7 +46,7 @@ const infoCards = [
     className='bg-primary-dark'
     image={process.env.PUBLIC_URL + "/api_screenshot.png"}
     imageLink='https://lake-freeze-api.kevin-mcquate.net/docs'
-    logos={[process.env.PUBLIC_URL + "/fastapi.PNG", process.env.PUBLIC_URL + "/aws-lambda.PNG",]}
+    logos={[process.env.PUBLIC_URL + "/fastapi.png", process.env.PUBLIC_URL + "/aws-lambda.png",]}
   />,
   <InfoCard 
     heading="Satellite Image ETL" 
