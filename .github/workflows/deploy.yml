@@ -1,0 +1,80 @@
+
+name: Deploy to CloudFront
+
+on:
+  push:
+    branches: [ "main" ]
+
+env:
+  AWS_REGION: us-east-1
+  AWS_ACCOUNT_ID: 117819748843
+  DOMAIN_NAME: portfolio.kevin-mcquate.net
+
+permissions:
+  contents: read
+
+defaults:
+  run:
+    working-directory: portfolio
+
+jobs:
+  deploy:
+    name: Deploy 
+    runs-on: ubuntu-latest
+    environment: production
+    container:
+      image: public.ecr.aws/sam/build-nodejs18.x:latest
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v3
+
+    - name: Configure AWS credentials
+      uses: aws-actions/configure-aws-credentials@v1
+      with:
+        aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+        aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+        aws-region: ${{ env.AWS_REGION }}
+
+    # - uses: actions/setup-node@v3
+    #   with:
+    #     node-version: 18
+    #     cache: 'npm'
+    #     cache-dependency-path: lake-freeze-frontend/package-lock.json
+    - name: npm install
+      run: npm install 
+
+    # - name: react app env file
+    #   run: |
+    #     echo REACT_APP_LAKES_API_URL="https://${API_DOMAIN_NAME}" >> .env
+    #     echo PUBLIC_URL="${PUBLIC_ZONE_PREFIX}" >> .env
+    #     echo REACT_APP_GOOGLE_MAPS_API_KEY="${REACT_APP_GOOGLE_MAPS_API_KEY}" >> .env
+
+    - name: React app deploy 
+      run: |
+        npm run build
+        aws s3 rm --recursive s3://${PUBLIC_ZONE_BUCKET_NAME}/${{ github.event.repository.name }}
+        aws s3 cp --recursive build/ s3://${PUBLIC_ZONE_BUCKET_NAME}/${{ github.event.repository.name }}
+
+    - name: SAM build
+      run: sam build
+      
+    - name: SAM deploy
+      run: >
+        sam deploy 
+        --stack-name lake-freeze-frontend
+        --region ${AWS_REGION}
+        --no-fail-on-empty-changeset
+        --capabilities CAPABILITY_AUTO_EXPAND
+        --s3-bucket deployment-zone-${AWS_ACCOUNT_ID}
+        --s3-prefix ${{ github.event.repository.name }}
+        --parameter-overrides 
+        DomainName=${DOMAIN_NAME}
+        DomainTLSCertificateArn=arn:aws:acm:us-east-1:117819748843:certificate/e194c5a3-7805-4b80-9d4b-7e8dd85a683c
+        PublicS3BucketName=${PUBLIC_ZONE_BUCKET_NAME}
+        PublicS3Prefix=${PUBLIC_ZONE_PREFIX}
+
+    # - name: Invalidate CloudFront cache
+    #   run: aws cloudfront create-invalidation
+
+

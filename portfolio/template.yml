@@ -1,0 +1,93 @@
+AWSTemplateFormatVersion: "2010-09-09"
+Transform: AWS::Serverless-2016-10-31
+
+Parameters:
+  DomainName:
+    Type: String
+    Default: portfolio.kevin-mcquate.net
+
+  DomainTLSCertificateArn:
+    Type: String
+    Default: arn:aws:acm:us-east-1:117819748843:certificate/54c6c2f2-5e3c-4ea1-b261-45921c827c36
+
+  PublicS3BucketName:
+    Type: String
+    Default: public-zone-117819748843-us-east-1 #!Sub public-zone-${AWS::AccountId}-${AWS::Region}
+  
+  PublicS3Prefix:
+    Type: String
+    Default: personal-portfolio/
+
+Resources:
+  # S3BucketPolicy:
+  #   Type: 'AWS::S3::BucketPolicy'
+  #   Metadata:
+  #     Comment: 'Bucket policy to allow cloudfront to access the data'
+  #   Properties:
+  #     Bucket: !Ref PublicS3BucketName
+  #     PolicyDocument:
+  #       Statement:
+  #         - Action:
+  #             - 's3:GetObject'
+  #           Effect: 'Allow'
+  #           Principal:
+  #             CanonicalUser: !GetAtt CfOriginAccessIdentity.S3CanonicalUserId
+  #           Resource:
+  #             - !Sub 'arn:aws:s3:::${PublicS3BucketName}/*'
+
+
+  CfDistribution:
+    Type: "AWS::CloudFront::Distribution"
+    Metadata:
+      Comment: 'Distribution for portfolio app'
+    Properties:
+      DistributionConfig:
+        Comment: 'A simple distribution with an S3 origin'
+        Aliases:
+          - !Sub ${DomainName}
+        DefaultCacheBehavior:
+          AllowedMethods:
+            - 'HEAD'
+            - 'GET'
+          CachedMethods:
+            - 'HEAD'
+            - 'GET'
+          Compress: false
+          DefaultTTL: 86400
+          ForwardedValues:
+            Cookies:
+              Forward: 'none'
+            Headers:
+              - 'Origin'
+            QueryString: false
+          MaxTTL: 31536000
+          MinTTL: 86400
+          TargetOriginId: !Sub 's3-origin-${PublicS3BucketName}-${PublicS3Prefix}'
+          ViewerProtocolPolicy: 'redirect-to-https'
+        DefaultRootObject: !Sub 'index.html'
+        Enabled: true
+        HttpVersion: 'http1.1'
+        IPV6Enabled: false
+        ViewerCertificate:
+          AcmCertificateArn: !Ref DomainTLSCertificateArn
+          MinimumProtocolVersion: TLSv1.1_2016
+          SslSupportMethod: sni-only
+        Origins:
+          - DomainName: !Sub '${PublicS3BucketName}.s3.amazonaws.com'
+            Id: !Sub 's3-origin-${PublicS3BucketName}'
+            OriginPath: '${PublicS3Prefix}'
+            S3OriginConfig:
+              OriginAccessIdentity: !Sub 'origin-access-identity/cloudfront/${CfOriginAccessIdentity}'
+        PriceClass: 'PriceClass_All'
+
+  CfOriginAccessIdentity:
+    Type: "AWS::CloudFront::CloudFrontOriginAccessIdentity"
+    Metadata:
+      Comment: 'Access S3 bucket content only through CloudFront'
+    Properties:
+      CloudFrontOriginAccessIdentityConfig:
+        Comment: 'Access S3 bucket content only through CloudFront'
+
+
+
+    
