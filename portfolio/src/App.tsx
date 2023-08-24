@@ -44,7 +44,7 @@ const infoCards = [
     heading="Lake Ice API" 
     body="REST API built with FastAPI running on AWS Lambda"
     className='bg-primary-dark'
-    image={process.env.PUBLIC_URL + "/api_screenshot.png"}
+    image={process.env.PUBLIC_URL + "/fastapi_screenshot.png"}
     imageLink='https://lake-freeze-api.kevin-mcquate.net/docs'
     logos={[process.env.PUBLIC_URL + "/fastapi.png", process.env.PUBLIC_URL + "/aws-lambda.png",]}
   />,
