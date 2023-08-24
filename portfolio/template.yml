@@ -29,7 +29,7 @@ Resources:
             Principal:
               CanonicalUser: !GetAtt CfOriginAccessIdentity.S3CanonicalUserId
             Resource:
-              - !Sub 'arn:aws:s3:::${PublicS3BucketName}/${PublicS3Prefix}*'
+              - !Sub 'arn:aws:s3:::${PublicS3BucketName}/${PublicS3Prefix}/*'
 
 
   CfDistribution:
