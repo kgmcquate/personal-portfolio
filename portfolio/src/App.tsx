@@ -94,7 +94,7 @@ function App() {
           <b>Hi, I'm Kevin!</b>
           {/* <br></br> */}
           <p className='text-lg'>
-             I am a "Big Data" Software Engineer, which means I enable the business to understand, analyze, and make decisions using large amounts of data.
+             I am a "Big Data" Software Engineer, which means I enable businesses to understand, analyze, and make decisions using large amounts of data.
           </p>
           
         </div>
