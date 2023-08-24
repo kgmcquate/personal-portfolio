@@ -56,7 +56,7 @@ Resources:
             Id: !Sub 's3-origin-${PublicS3BucketName}'
             OriginPath: !Sub "/${PublicS3Prefix}"
             S3OriginConfig:
-              OriginAccessIdentity: null
+              OriginAccessIdentity: ""
 
         PriceClass: 'PriceClass_All'
 
