@@ -38,14 +38,14 @@ jobs:
         aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         aws-region: ${{ env.AWS_REGION }}
 
-    # - name: npm install
-    #   run: npm install 
+    - name: npm install
+      run: npm install 
 
-    # - name: React app deploy 
-    #   run: |
-    #     npm run build
-    #     aws s3 rm --recursive s3://${PUBLIC_ZONE_BUCKET_NAME}/${PUBLIC_ZONE_PREFIX}/
-    #     aws s3 cp --recursive build/ s3://${PUBLIC_ZONE_BUCKET_NAME}/${PUBLIC_ZONE_PREFIX}/
+    - name: React app deploy 
+      run: |
+        npm run build
+        aws s3 rm --recursive s3://${PUBLIC_ZONE_BUCKET_NAME}/${PUBLIC_ZONE_PREFIX}/
+        aws s3 cp --recursive build/ s3://${PUBLIC_ZONE_BUCKET_NAME}/${PUBLIC_ZONE_PREFIX}/
 
     - name: SAM build
       run: sam build
