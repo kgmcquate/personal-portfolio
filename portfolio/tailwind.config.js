@@ -8,11 +8,12 @@ module.exports = {
     colors: {
       // primary: {
       //   bg: "#D9DCD6",
+      //   lighter: "#E9ECEF",
       //   accent: "#DD614A",
       //   light: "#81C3D7",
       //   main: "#3A7CA5",
       //   dark: "#16425B",
-      //   "text": "#",
+      //   "text": "#ff5e5b",
       // },
       primary: {
         bg: "#F8F9FA",

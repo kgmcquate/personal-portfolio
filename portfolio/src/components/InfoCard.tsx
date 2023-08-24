@@ -22,7 +22,7 @@ export function InfoCard(
     ) {
     return (
       // p-6 max-w-sm mx-auto bg-white rounded-xl shadow-lg flex items-center space-x-4
-      <div className={className + " h-48 overflow-clip  grid grid-cols-2 p-2 gap-2 shadow-2xl  rounded-lg "}>
+      <div className={className + " h-54 overflow-clip  grid grid-cols-2 p-2 gap-2 shadow-2xl  rounded-lg "}>
         <div className='place-self-center '>
             <a href={imageLink}  target='_blank' rel='noreferrer'>
                 {

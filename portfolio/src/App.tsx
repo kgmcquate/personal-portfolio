@@ -73,9 +73,9 @@ const infoCards = [
 
 function App() {
   return (
-    <div className='h-full w-full bg-primary-bg  font-display text-2xl text-primary-text bg-gradient-to-b from-primary-bg to-primary-darker'>
-      <div className="container mx-auto max-w-6xl grid grid-cols-1 gap-6 p-6  " >
-        <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-6 p-6">
+    <div className='h-full w-full bg-primary-bg font-display text-2xl text-primary-text bg-gradient-to-b from-primary-bg to-primary-darker'>
+      <div className="container mx-auto max-w-6xl grid grid-cols-1 gap-4 p-4  " >
+        <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-4 p-4">
           <InfoCard 
             heading="Kevin McQuate"
             body="Big Data and Software Engineer"
@@ -88,13 +88,21 @@ function App() {
               process.env.PUBLIC_URL + "/icons8-resume.svg",
             ]}
             logoLinks={["https://github.com/kgmcquate", "https://www.linkedin.com/in/kevin-mcquate/", process.env.PUBLIC_URL + "/Resume.pdf"]}
-          />
-          {/* <div>pla</div> */}
+          /> 
         </div>
 
-        {/* <Divider className=""></Divider> */}
+        <div className="grid bg-primary-main p-4 rounded-lg">
+          <b>Hi, I'm Kevin!</b>
+          {/* <br></br> */}
+          <p className='text-lg'>
+             I am a "Big Data" Software Engineer, which means I enable the business to understand, analyze, and make decisions using large amounts of data.
+          </p>
+          
+        </div>
         
-        <div className="grid bg-primary-lighter p-6 rounded-lg sm:grid-cols-1 md:grid-cols-2 gap-6 ">
+        <h1 className="text-center">Personal Projects</h1>
+        <div className="grid bg-primary-lighter p-4 rounded-lg sm:grid-cols-1 md:grid-cols-2 gap-4 ">
+          
           {infoCards}
         </div>
       </div>
