@@ -7,7 +7,7 @@ Parameters:
 
   DomainTLSCertificateArn:
     Type: String
-    
+
   PublicS3BucketName:
     Type: String
   
@@ -58,7 +58,7 @@ Resources:
             QueryString: false
           MaxTTL: 31536000
           MinTTL: 86400
-          TargetOriginId: !Sub 's3-origin-${PublicS3BucketName}-${PublicS3Prefix}'
+          TargetOriginId: !Sub 's3-origin-${PublicS3BucketName}'
           ViewerProtocolPolicy: 'redirect-to-https'
         DefaultRootObject: !Sub 'index.html'
         Enabled: true
