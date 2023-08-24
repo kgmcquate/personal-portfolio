@@ -9,6 +9,8 @@ env:
   AWS_REGION: us-east-1
   AWS_ACCOUNT_ID: 117819748843
   DOMAIN_NAME: portfolio.kevin-mcquate.net
+  PUBLIC_ZONE_BUCKET_NAME: public-zone-117819748843-us-east-1
+  PUBLIC_ZONE_PREFIX: ${{ github.event.repository.name }}
 
 permissions:
   contents: read
