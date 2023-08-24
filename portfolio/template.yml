@@ -55,6 +55,9 @@ Resources:
           - DomainName: !Sub '${PublicS3BucketName}.s3.amazonaws.com'
             Id: !Sub 's3-origin-${PublicS3BucketName}'
             OriginPath: !Sub "/${PublicS3Prefix}"
+            S3OriginConfig:
+              OriginAccessIdentity: null
+
         PriceClass: 'PriceClass_All'
 
 
