@@ -6,29 +6,31 @@ export function InfoCard(
       body,
       className,
       image,
-      imageLink = "",
+      link,
+      imageLink,
       logos = [],
       logoLinks = []
     }:
     { 
       heading: string,
-      body: string,
+      body: string | React.ReactNode,
       className: string,
       image: string | React.ReactNode,
+      link?: string,
       imageLink?: string,
-      logos?: string[]
+      logos?: string[],
       logoLinks?: string[]
     }
     ) {
     return (
       // p-6 max-w-sm mx-auto bg-white rounded-xl shadow-lg flex items-center space-x-4
-      <a href={imageLink}  target='_blank' rel='noreferrer'>
+      <a href={link}  target='_blank' rel='noreferrer'>
         <div className={
           className + 
-          " h-54 overflow-clip  grid grid-cols-2 p-2 gap-2 rounded-lg  md:brightness-100 lg:brightness-90 transition  duration-100 ease-linear hover:brightness-100 hover:drop-shadow-2xl"
+          " h-54 overflow-clip grid grid-cols-2 p-2 gap-2 rounded-lg  md:brightness-100 lg:brightness-90 transition  duration-100 ease-linear hover:brightness-100 hover:drop-shadow-2xl"
         }>
             <div className='place-self-center '>
-                
+              <a href={imageLink}  target='_blank' rel='noreferrer'>
                     {
                     typeof image === 'string' ? 
                         <img 
@@ -38,7 +40,7 @@ export function InfoCard(
                         /> 
                         : image
                     }
-                
+                </a>
             </div>
             <div className="grid grid-cols-1 ">
                 <div className="">

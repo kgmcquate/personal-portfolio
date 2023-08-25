@@ -1,5 +1,8 @@
 module.exports = {
-  content: ['./src/**/*.{js,jsx,ts,tsx}'],
+  content: [
+    './src/**/*.{js,jsx,ts,tsx}',
+    '*.html'
+  ],
   important: '#root',
   theme: {
     fontFamily : {
@@ -34,10 +37,6 @@ module.exports = {
       //   "text": "#F3F3F3",
       // },
     },
-  },
-  corePlugins: {
-    // Remove the Tailwind CSS preflight styles so it can use Material UI's preflight instead (CssBaseline).
-    preflight: true,
   },
   plugins: []
 };

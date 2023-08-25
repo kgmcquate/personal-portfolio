@@ -9,7 +9,7 @@ const infoCards = [
     body="Interactive map for exploring weather and ice on lakes"
     className='bg-primary-dark'
     image={process.env.PUBLIC_URL + "/lake-ice-map.png"}
-    imageLink="https://lake-freeze.kevin-mcquate.net/"
+    link="https://lake-freeze.kevin-mcquate.net/"
     logos={[
       process.env.PUBLIC_URL + "/react-logo.png",
       process.env.PUBLIC_URL + "/tailwindcss-logotype.svg",
@@ -21,7 +21,7 @@ const infoCards = [
     body="Infrastructure written in Terraform for running personal projects"
     className='bg-primary-light'
     image={process.env.PUBLIC_URL + "/AWS_network_diagram.svg"}
-    imageLink="https://github.com/kgmcquate/infra"
+    link="https://github.com/kgmcquate/infra"
     logos={[
       process.env.PUBLIC_URL + "/Amazon_Web_Services_Logo.png",
       process.env.PUBLIC_URL + "/hashicorp-terraform-logo.png",
@@ -33,7 +33,7 @@ const infoCards = [
     body="Loads daily weather using Spark on AWS EMR Serverless"
     className='bg-primary-main'
     image={process.env.PUBLIC_URL + "/weather-etl.png"}
-    imageLink='https://github.com/kgmcquate/weather-etl'
+    link='https://github.com/kgmcquate/weather-etl'
     logos={[
       process.env.PUBLIC_URL + "/Apache_Spark_logo.png",
       process.env.PUBLIC_URL + "/Python-Symbol.png",
@@ -45,7 +45,7 @@ const infoCards = [
     body="REST API built with FastAPI running on AWS Lambda"
     className='bg-primary-dark'
     image={process.env.PUBLIC_URL + "/fastapi_screenshot.png"}
-    imageLink='https://lake-freeze-api.kevin-mcquate.net/docs'
+    link='https://lake-freeze-api.kevin-mcquate.net/docs'
     logos={[process.env.PUBLIC_URL + "/fastapi.png", process.env.PUBLIC_URL + "/aws-lambda.png",]}
   />,
   <InfoCard 
@@ -53,7 +53,7 @@ const infoCards = [
     body="Loads daily satellite imagery using Spark on AWS EMR Serverless"
     className='bg-primary-light'
     image={process.env.PUBLIC_URL + "/lake.PNG"}
-    imageLink='https://github.com/kgmcquate/lake-satellite-image-etl'
+    link='https://github.com/kgmcquate/lake-satellite-image-etl'
     logos={[
       process.env.PUBLIC_URL + "/Apache_Spark_logo.png",
       process.env.PUBLIC_URL + "/Python-Symbol.png",
@@ -65,19 +65,19 @@ const infoCards = [
     body="Predicts snow cover on bodies of water using an XGBoost model"
     className='bg-primary-main'
     image={process.env.PUBLIC_URL + "/snow.PNG"}
-    imageLink='https://github.com/kgmcquate/ice-thickness-ml-models'
+    link='https://github.com/kgmcquate/ice-thickness-ml-models'
     logos={[process.env.PUBLIC_URL + "/logo-xgboost.png", process.env.PUBLIC_URL + "/Pandas_logo.webp",]}
   />,
 ]
 
 function App() {
   return (
-    <div className='h-screen w-full bg-primary-bg font-display text-2xl text-primary-text bg-gradient-to-b from-primary-bg to-primary-darker'>
+    <div className='font-display text-2xl text-primary-text '> 
       <div className="container mx-auto max-w-6xl grid grid-cols-1 gap-4 p-4  " >
         <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-4 p-4">
           <InfoCard 
             heading="Kevin McQuate"
-            body="Big Data and Software Engineer"
+            body={<ul ><li style={{marginBottom: "10px"}}>Big Data and Software Engineer</li><li>kgmcquate@gmail.com</li></ul>}
             className="bg-primary-main text-left"
             image={<img className="h-44 w-44 rounded-full border-2 border-primary-light shadow-2xl" srcSet={process.env.PUBLIC_URL + "/profile.jpg"} alt='profile'/>}
             imageLink='https://www.linkedin.com/in/kevin-mcquate/'
@@ -87,7 +87,7 @@ function App() {
               process.env.PUBLIC_URL + "/icons8-resume.svg",
             ]}
             logoLinks={["https://github.com/kgmcquate", "https://www.linkedin.com/in/kevin-mcquate/", process.env.PUBLIC_URL + "/Resume.pdf"]}
-          /> 
+          />
         </div>
 
         <div className="grid bg-primary-main p-4 rounded-lg">
@@ -100,10 +100,11 @@ function App() {
         </div>
         
         <h1 className="text-center">Personal Projects</h1>
-        <div className="grid bg-primary-lighter p-4 rounded-lg sm:grid-cols-1 md:grid-cols-2 gap-4 ">
-          
+        <div className="grid bg-primary-light p-4 rounded-lg sm:grid-cols-1 md:grid-cols-2 gap-4 ">
           {infoCards}
         </div>
+
+
       </div>
     </div>
   )
