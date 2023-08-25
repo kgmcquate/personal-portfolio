@@ -2,6 +2,18 @@ import React from 'react';
 
 import { InfoCard } from './components/InfoCard'
 
+import { pdfjs } from 'react-pdf';
+
+// import { Document, Page } from 'react-pdf'
+// import 'react-pdf/dist/Page/TextLayer.css';
+// import 'react-pdf/dist/Page/AnnotationLayer.css';
+
+pdfjs.GlobalWorkerOptions.workerSrc = new URL(
+  'pdfjs-dist/build/pdf.worker.min.js',
+  import.meta.url,
+).toString();
+
+
 
 const infoCards = [
   <InfoCard 
@@ -108,6 +120,16 @@ function App() {
             {infoCards}
           </div>
         </div>
+
+        {/* <div className=" bg-primary-light p-4 rounded-lg content-center">
+          <h1 className="text-center">Resume</h1>
+          
+          <Document file={process.env.PUBLIC_URL + "/Resume.pdf"} className="w-200 p-4 rounded-lg content-center"> 
+            <Page pageNumber={1} className="w-200 p-4 rounded-lg content-center" canvasBackground='black' />
+          </Document>
+        </div> */}
+
+        
       </div>
     </div>
   )
