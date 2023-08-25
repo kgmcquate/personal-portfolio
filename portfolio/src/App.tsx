@@ -58,7 +58,10 @@ const infoCards = [
     className='bg-primary-dark'
     image={process.env.PUBLIC_URL + "/fastapi_screenshot.png"}
     link='https://lake-freeze-api.kevin-mcquate.net/docs'
-    logos={[process.env.PUBLIC_URL + "/fastapi.png", process.env.PUBLIC_URL + "/aws-lambda.png",]}
+    logos={[
+      process.env.PUBLIC_URL + "/fastapi.png", 
+      process.env.PUBLIC_URL + "/aws-lambda.png",
+    ]}
   />,
   <InfoCard 
     heading="Satellite Image ETL" 
@@ -78,8 +81,33 @@ const infoCards = [
     className='bg-primary-main'
     image={process.env.PUBLIC_URL + "/snow.PNG"}
     link='https://github.com/kgmcquate/ice-thickness-ml-models'
-    logos={[process.env.PUBLIC_URL + "/logo-xgboost.png", process.env.PUBLIC_URL + "/Pandas_logo.webp",]}
+    logos={[
+      process.env.PUBLIC_URL + "/logo-xgboost.png", 
+      process.env.PUBLIC_URL + "/Pandas_logo.webp",
+    ]}
   />,
+  <InfoCard 
+    heading="Portfolio Website" 
+    body="Written with React and Tailwind.css and hosted on AWS CloudFront"
+    className='bg-primary-dark'
+    image={process.env.PUBLIC_URL + "/portfolio_screenshot.png"}
+    link='https://github.com/kgmcquate/ice-thickness-ml-models'
+    logos={[
+      process.env.PUBLIC_URL + "/react-logo.png",
+      process.env.PUBLIC_URL + "/tailwindcss-logotype.svg",
+    ]}
+  />,
+  <InfoCard 
+    heading="Solar Plant ML Project"
+    body="Jupyter Notebook of my analysis of solar plant data. Completed as part of an EdX course."
+    className='bg-primary-light'
+    image={process.env.PUBLIC_URL + "/solar-plant.png"}
+    link={process.env.PUBLIC_URL + "/solar-panel-data.html"}
+    logos={[
+      process.env.PUBLIC_URL + "/Pandas_logo.webp",
+      process.env.PUBLIC_URL + "/sklearn.png",
+    ]}
+  />
 ]
 
 function App() {
@@ -116,10 +144,12 @@ function App() {
         <div className=" bg-primary-light p-4 rounded-lg ">
           <h1 className="text-center">Personal Projects</h1>
           
-          <div className="grid bg-primary-light p-4 sm:grid-cols-1 md:grid-cols-2 gap-4 ">
+          <div className="grid colored-list bg-primary-light p-4 sm:grid-cols-1 md:grid-cols-2 gap-4">
             {infoCards}
           </div>
         </div>
+
+
 
         {/* <div className=" bg-primary-light p-4 rounded-lg content-center">
           <h1 className="text-center">Resume</h1>
