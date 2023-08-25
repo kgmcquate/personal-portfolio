@@ -90,21 +90,24 @@ function App() {
           />
         </div>
 
-        <div className="grid bg-primary-main p-4 rounded-lg">
+        <div className="grid bg-primary-main p-8 rounded-lg">
           <b>Hi, I'm Kevin!</b>
           {/* <br></br> */}
           <p className='text-lg'>
              I am a "Big Data" Software Engineer, which means I enable businesses to understand, analyze, and make decisions using large amounts of data.
           </p>
-          
         </div>
+
+       
         
-        <h1 className="text-center">Personal Projects</h1>
-        <div className="grid bg-primary-light p-4 rounded-lg sm:grid-cols-1 md:grid-cols-2 gap-4 ">
-          {infoCards}
+          {/* <h1 className="text-center">Personal Projects</h1> */}
+        <div className=" bg-primary-light p-4 rounded-lg ">
+          <h1 className="text-center">Personal Projects</h1>
+          
+          <div className="grid bg-primary-light p-4 sm:grid-cols-1 md:grid-cols-2 gap-4 ">
+            {infoCards}
+          </div>
         </div>
-
-
       </div>
     </div>
   )
