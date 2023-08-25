@@ -1,0 +1,6 @@
+.react-pdf__Page__canvas {
+    margin: 0 auto; 
+    width: 90% !important;
+    height: 80% !important;
+    /* @apply md:w-9/12 sm:w-full bg-gradient-to-b from-primary-bg to-primary-darker */
+}
