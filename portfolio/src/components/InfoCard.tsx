@@ -43,13 +43,13 @@ export function InfoCard(
                 </a>
             </div>
             <div className="grid grid-cols-1 ">
-                <div className="">
+                <div className="break-words ">
                     {heading}
                     <hr />
                 </div>
                 
 
-                <div className="text-base ">
+                <div className="text-base break-words ">
                   {body}
                 </div>
                 
