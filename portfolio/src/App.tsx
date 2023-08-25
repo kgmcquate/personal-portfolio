@@ -91,7 +91,7 @@ const infoCards = [
     body="Written with React and Tailwind.css and hosted on AWS CloudFront"
     className='bg-primary-dark'
     image={process.env.PUBLIC_URL + "/portfolio_screenshot.png"}
-    link='https://github.com/kgmcquate/ice-thickness-ml-models'
+    link='https://home.kevin-mcquate.net/'
     logos={[
       process.env.PUBLIC_URL + "/react-logo.png",
       process.env.PUBLIC_URL + "/tailwindcss-logotype.svg",
