@@ -209,7 +209,7 @@ function App() {
         <div className="bg-primary-light p-4 rounded-lg content-center">
           <h1 className="text-center">Resume</h1>
           <a href={process.env.PUBLIC_URL + "/Resume.pdf"} target="_blank" rel="noreferrer">
-            <img className="p-4 rounded-lg content-center" srcSet={process.env.PUBLIC_URL + "/Resume.png"}></img>
+            <img className="p-4 rounded-lg content-center" srcSet={process.env.PUBLIC_URL + "/Resume.png"} alt="resume"></img>
           </a>
           {/* <Document file={process.env.PUBLIC_URL + "/Resume.pdf"} className="p-4 rounded-lg content-center"> 
             
