@@ -158,7 +158,7 @@ function App() {
 
         <div className="bg-primary-dark p-4 rounded-lg content-center">
           <h1 className="text-center  mb-4">Cover Letter</h1>
-          <div className="bg-primary-main rounded-xl p-4">
+          <div className="bg-primary-main text-base rounded-xl p-4">
 
             <div>
               <h1>To whom it may concern,</h1>
