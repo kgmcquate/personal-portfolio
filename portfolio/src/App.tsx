@@ -2,20 +2,7 @@ import React, { useRef } from 'react';
 
 import { InfoCard } from './components/InfoCard'
 
-import Button from '@mui/material/Button';
-
-// import { pdfjs } from 'react-pdf';
-
-// import { Document, Page } from 'react-pdf'
-// import 'react-pdf/dist/Page/TextLayer.css';
-// import 'react-pdf/dist/Page/AnnotationLayer.css';
-
 import './App.css'
-
-// pdfjs.GlobalWorkerOptions.workerSrc = new URL(
-//   'pdfjs-dist/build/pdf.worker.min.js',
-//   import.meta.url,
-// ).toString();
 
 import HomeIcon from '@mui/icons-material/Home';
 import TravelExploreIcon from '@mui/icons-material/TravelExplore';
@@ -155,8 +142,6 @@ const infoCards = [
 
 function App() {
 
-
-  const defaultDiv = document.createElement('div')
   const personalProjectsRef = useRef<HTMLDivElement>(null);
   const coverLetterRef = useRef<HTMLDivElement>(null);
   const resumeRef = useRef<HTMLDivElement>(null);
