@@ -152,24 +152,11 @@ function App() {
     }
   }
 
-
-
-  // var borderGradientClass = `bg-gradient-to-r from-primary-darker to-primary-accent-1`
-  // const animationBorderAnimationClass = "animate-gradient-x"
-
-
-
-  // return (
-  // p-6 max-w-sm mx-auto bg-white rounded-xl shadow-lg flex items-center space-x-4
-  // <a href={link} target='_blank' rel='noreferrer'>
-  //   <div className={` rounded-lg p-1.5  ${borderGradientClass} ${animationBorderAnimationClass}`}></div>
-
-
   return (
     <div className='text-lg'>
       <div className='invisible xl:visible fixed top-0 w-24 h-full m-6  '>
         <div className="rounded-lg p-1.5 bg-gradient-to-tr from-primary-darker to-primary-accent-1">
-          <div className='grid grid-flow-row gap-4 rounded-lg bg-primary-main  pt-4 pb-4'>
+          <div className='grid grid-flow-row gap-4 rounded-lg bg-primary-main  pt-4 pb-4 '>
             {/* <div className='text-center'>Sections:</div>
             <hr ></hr> */}
             <button onClick={() => scrollToRef(personalProjectsRef)} >Personal Projects</button>
