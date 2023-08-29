@@ -4,7 +4,7 @@ module.exports = {
   ],
   important: '#root',
   theme: {
-    fontFamily : {
+    fontFamily: {
       display: ['Open Sans', 'sans-serif']
     },
     colors: {
@@ -25,7 +25,15 @@ module.exports = {
         dark: "#ADB5BD",
         darker: "#6C757D",
         "text": "#212529",
-        accent: "#ff5e5b"
+        // "accent-1": "#3febf4",
+        // "accent-2": "#3ff4a3",
+        // "accent-3": "#3f91f4",
+        // "accent-1": "#0B4F6C",
+        // "accent-2": "#EAE6E5",
+        // "accent-3": "#68A691",
+        "accent-1": "#3ff4f4",
+        "accent-2": "#3ff49a",
+        "accent-3": "#3F9AF4",
       },
       // primary: {
       //   bg: "#F3F3F3",
@@ -35,6 +43,45 @@ module.exports = {
       //   dark: "#250001",
       //   "text": "#F3F3F3",
       // },
+    },
+    extend: {
+      'animation': {
+        'gradient-x': 'gradient-x 3s ease infinite',
+        'gradient-y': 'gradient-y 3s ease infinite',
+        'gradient-xy': 'gradient-xy 3s ease infinite',
+      },
+      'keyframes': {
+        'gradient-y': {
+          '0%, 100%': {
+            'background-size': '400% 400%',
+            'background-position': 'center top'
+          },
+          '50%': {
+            'background-size': '200% 200%',
+            'background-position': 'center center'
+          }
+        },
+        'gradient-x': {
+          '0%, 100%': {
+            'background-size': '200% 200%',
+            'background-position': 'left center'
+          },
+          '50%': {
+            'background-size': '200% 200%',
+            'background-position': 'right center'
+          }
+        },
+        'gradient-xy': {
+          '0%, 100%': {
+            'background-size': '400% 400%',
+            'background-position': 'left center'
+          },
+          '50%': {
+            'background-size': '200% 200%',
+            'background-position': 'right center'
+          }
+        }
+      }
     },
   },
   plugins: []
