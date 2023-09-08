@@ -159,17 +159,17 @@ function App() {
           <div className='grid grid-flow-row gap-4 rounded-lg bg-primary-main  pt-4 pb-4 '>
             {/* <div className='text-center'>Sections:</div>
             <hr ></hr> */}
-            <button onClick={() => scrollToRef(personalProjectsRef)} >Personal Projects</button>
+            <button className="btn btn-primary" onClick={() => scrollToRef(personalProjectsRef)} >Personal Projects</button>
             <hr></hr>
-            <button onClick={() => scrollToRef(coverLetterRef)}>Cover Letter</button>
+            <button className="btn" onClick={() => scrollToRef(coverLetterRef)}>Cover Letter</button>
             <hr ></hr>
-            <button onClick={() => scrollToRef(resumeRef)} >Resume</button>
+            <button className="btn" onClick={() => scrollToRef(resumeRef)} >Resume</button>
           </div>
         </div>
       </div>
       <div className='font-display text-2xl text-primary-text'>
-        <div className=" mx-auto max-w-6xl grid grid-cols-1 gap-4 p-4  " >
-          <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-4 p-4">
+        <div className=" mx-auto max-w-6xl grid grid-cols-1 gap-4 p-1 md:p-4" >
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 p-1 md:p-4">
             <InfoCard
               index={3}
               heading="Kevin McQuate"
@@ -198,31 +198,24 @@ function App() {
           </div>
 
 
-
-
-
-
           {/* <h1 className="text-center">Personal Projects</h1> */}
-          <div ref={personalProjectsRef} className=" bg-primary-light p-4 rounded-lg ">
+          <div ref={personalProjectsRef} className=" bg-primary-light p-1 md:p-4 rounded-lg ">
             <h1 className="text-center">Personal Projects</h1>
 
-            <div className="grid colored-list bg-primary-light p-4 sm:grid-cols-1 md:grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 bg-primary-light p-1 md:p-4 gap-4">
               {infoCards}
             </div>
           </div>
 
 
-
-
-
-          <div ref={coverLetterRef} className="bg-primary-dark p-4 rounded-lg content-center">
+          <div ref={coverLetterRef} className="bg-primary-dark p-1 md:p-4 rounded-lg content-center">
             <h1 className="text-center  mb-4">Cover Letter</h1>
             <div className='p-1.5 rounded-lg bg-gradient-to-tl from-primary-accent-2 to-primary-accent-1 animate-gradient-x'>
-              <div className="bg-primary-main text-base rounded-xl p-4">
+              <div className="bg-primary-main text-base rounded-xl p-1 md:p-4">
 
                 <div>
-                  <h1>To whom it may concern,</h1>
-                  <br></br>
+                  {/* <h1>To whom it may concern,</h1> */}
+                  {/* <br></br> */}
                   <p>
                     I am a Big Data Engineer with a heavy focus on software engineering and solving difficult
                     problems. My primary skills are with “big data” technologies, like Spark, Hive, Kafka, SQL
@@ -267,11 +260,11 @@ function App() {
             </div>
           </div>
 
-          <div ref={resumeRef} className="bg-primary-light p-4 rounded-lg content-center">
+          <div ref={resumeRef} className="bg-primary-light p-1 md:p-4 rounded-lg content-center">
             <h1 className="text-center pb-3">Resume</h1>
             <div className='p-1.5 rounded-lg bg-gradient-to-tl from-primary-light to-primary-darker animate-gradient-xy'>
               <a href={process.env.PUBLIC_URL + "/Resume.pdf"} target="_blank" rel="noreferrer">
-                <img className="p-4 rounded-lg content-center" srcSet={process.env.PUBLIC_URL + "/Resume.png"} alt="resume"></img>
+                <img className="p-1 md:p-4 rounded-lg content-center" srcSet={process.env.PUBLIC_URL + "/Resume.png"} alt="resume"></img>
               </a>
             </div>
           </div>
