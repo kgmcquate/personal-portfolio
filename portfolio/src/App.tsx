@@ -4,38 +4,6 @@ import { InfoCard } from './components/InfoCard'
 
 import './App.css'
 
-import HomeIcon from '@mui/icons-material/Home';
-import TravelExploreIcon from '@mui/icons-material/TravelExplore';
-import BarChartIcon from '@mui/icons-material/BarChart';
-import SettingsIcon from '@mui/icons-material/Settings';
-
-export const navData = [
-  {
-    id: 0,
-    icon: <HomeIcon />,
-    text: "Home",
-    link: "/"
-  },
-  {
-    id: 1,
-    icon: <TravelExploreIcon />,
-    text: "Explore",
-    link: "explore"
-  },
-  {
-    id: 2,
-    icon: <BarChartIcon />,
-    text: "Statistics",
-    link: "statistics"
-  },
-  {
-    id: 3,
-    icon: <SettingsIcon />,
-    text: "Settings",
-    link: "settings"
-  }
-]
-
 const infoCards = [
   <InfoCard
     index={1}
@@ -154,8 +122,8 @@ function App() {
 
   return (
     <div className='text-lg'>
-      <div className='invisible xl:visible fixed top-0 w-24 h-full m-6  '>
-        <div className="rounded-lg p-1.5 bg-gradient-to-tr from-primary-darker to-primary-accent-1">
+      <div className='invisible xl:visible fixed top-0 w-24 h-full m-6 '>
+        <div className="rounded-lg p-1.5 bg-gradient-to-b from-primary-dark to-primary-darker">
           <div className='grid grid-flow-row gap-4 rounded-lg bg-primary-main  pt-4 pb-4 '>
             {/* <div className='text-center'>Sections:</div>
             <hr ></hr> */}
