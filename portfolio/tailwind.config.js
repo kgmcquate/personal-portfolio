@@ -1,3 +1,28 @@
+const colors = {
+  bg: "#F8F9FA",
+  lighter: "#E9ECEF",
+  light: "#DEE2E6",
+  main: "#CED4DA",
+  dark: "#ADB5BD",
+  darker: "#6C757D",
+  "text": "#212529",
+  "accent-1": "#3ff4f4",
+  "accent-2": "#3ff49a",
+  "accent-3": "#2ec4b6",
+  "accent-3": "#caffbf",
+
+  // bg: "#E9D8A6",
+  // lighter: "#dee2ff",
+  // light: "#feeafa",
+  // main: "#efd3d7",
+  // dark: "#cbc0d3",
+  // darker: "#8e9aaf",
+  // "text": "#212529",
+  // "accent-1": "#538d22",
+  // "accent-2": "#3333ff",
+  // "accent-3": "#2ec4b6",
+}
+
 module.exports = {
   content: [
     './src/**/*.{js,jsx,ts,tsx}'
@@ -18,59 +43,14 @@ module.exports = {
       display: ['Open Sans', 'sans-serif']
     },
     colors: {
-      // primary: {
-      //   bg: "#D9DCD6",
-      //   lighter: "#E9ECEF",
-      //   accent: "#DD614A",
-      //   light: "#81C3D7",
-      //   main: "#3A7CA5",
-      //   dark: "#16425B",
-      //   "text": "#ff5e5b",
-      // },
-      primary: {
-        bg: "#F8F9FA",
-        lighter: "#E9ECEF",
-        light: "#DEE2E6",
-        main: "#CED4DA",
-        dark: "#ADB5BD",
-        darker: "#6C757D",
-        "text": "#212529",
-        // "accent-1": "#3febf4",
-        // "accent-2": "#3ff4a3",
-        // "accent-3": "#3f91f4",
-        // "accent-1": "#0B4F6C",
-        // "accent-2": "#EAE6E5",
-        // "accent-3": "#68A691",
-        "accent-1": "#3ff4f4",
-        "accent-2": "#3ff49a",
-        "accent-3": "#3F9AF4",
-      },
-      // primary: {
-      //   bg: "#F3F3F3",
-      //   accent: "#FCBA04",
-      //   light: "#A50104",
-      //   main: "#590004",
-      //   dark: "#250001",
-      //   "text": "#F3F3F3",
-      // },
+      primary: colors,
     },
     extend: {
       'animation': {
         'gradient-x': 'gradient-x 3s ease infinite',
-        'gradient-y': 'gradient-y 3s ease infinite',
-        'gradient-xy': 'gradient-xy 3s ease infinite',
+        'color-animation': 'color-animation 3s ease infinite',
       },
       'keyframes': {
-        'gradient-y': {
-          '0%, 100%': {
-            'background-size': '400% 400%',
-            'background-position': 'center top'
-          },
-          '50%': {
-            'background-size': '200% 200%',
-            'background-position': 'center center'
-          }
-        },
         'gradient-x': {
           '0%, 100%': {
             'background-size': '200% 200%',
@@ -81,19 +61,20 @@ module.exports = {
             'background-position': 'right center'
           }
         },
-        'gradient-xy': {
-          '0%, 100%': {
-            'background-size': '400% 400%',
-            'background-position': 'left center'
+
+        "color-animation": {
+          "0%": {
+            "color": colors["dark"]
           },
-          '50%': {
-            'background-size': '200% 200%',
-            'background-position': 'right center'
-          }
+          "25%, 75%": {
+            "color": colors["darker"]
+          },
+          "100%": {
+            "color": colors["dark"]
+          },
         }
       }
-    },
-    plugins: [require("daisyui")]
+    }
   },
   
 };

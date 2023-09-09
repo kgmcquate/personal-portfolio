@@ -125,13 +125,12 @@ function App() {
       <div className='invisible xl:visible fixed top-0 w-24 h-full m-6 '>
         <div className="rounded-lg p-1.5 bg-gradient-to-b from-primary-dark to-primary-darker">
           <div className='grid grid-flow-row gap-4 rounded-lg bg-primary-main  pt-4 pb-4 '>
-            {/* <div className='text-center'>Sections:</div>
-            <hr ></hr> */}
-            <button className="btn btn-primary" onClick={() => scrollToRef(personalProjectsRef)} >Personal Projects</button>
+
+            <button className="rounded-full " onClick={() => scrollToRef(personalProjectsRef)} >Personal Projects</button>
             <hr></hr>
-            <button className="btn" onClick={() => scrollToRef(coverLetterRef)}>Cover Letter</button>
+            <button className="rounded-full" onClick={() => scrollToRef(coverLetterRef)}>Cover Letter</button>
             <hr ></hr>
-            <button className="btn" onClick={() => scrollToRef(resumeRef)} >Resume</button>
+            <button className="rounded-full" onClick={() => scrollToRef(resumeRef)} >Resume</button>
           </div>
         </div>
       </div>
@@ -154,8 +153,8 @@ function App() {
             />
 
             <div className='p-1.5 rounded-lg bg-gradient-to-tl from-primary-accent-2 to-primary-accent-1 animate-gradient-x'>
-              <div className="grid bg-primary-main p-8 rounded-lg ">
-                <b>Hi, I'm Kevin!</b>
+              <div className="grid bg-primary-main p-8 rounded-lg">
+                <b className='animate-color-animation'>Hi, I'm Kevin!</b> 
                 {/* <br></br> */}
                 <p className='text-lg'>
                   I am a "Big Data" Software Engineer, which means I enable businesses to understand, analyze, and make decisions using large amounts of data.
@@ -230,7 +229,7 @@ function App() {
 
           <div ref={resumeRef} className="bg-primary-light p-1 md:p-4 rounded-lg content-center">
             <h1 className="text-center pb-3">Resume</h1>
-            <div className='p-1.5 rounded-lg bg-gradient-to-tl from-primary-light to-primary-darker animate-gradient-xy'>
+            <div className='p-1.5 rounded-lg bg-gradient-to-tl from-primary-light to-primary-darker animate-gradient-x'>
               <a href={process.env.PUBLIC_URL + "/Resume.pdf"} target="_blank" rel="noreferrer">
                 <img className="p-1 md:p-4 rounded-lg content-center" srcSet={process.env.PUBLIC_URL + "/Resume.png"} alt="resume"></img>
               </a>
