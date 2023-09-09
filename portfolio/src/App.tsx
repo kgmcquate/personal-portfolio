@@ -176,7 +176,7 @@ function App() {
 
 
           <div ref={coverLetterRef} className="bg-primary-dark p-1 md:p-4 rounded-lg content-center">
-            <h1 className="text-center  mb-4">Cover Letter</h1>
+            <h1 className="text-center  mb-4">About Me</h1>
             <div className='p-1.5 rounded-lg bg-gradient-to-tl from-primary-accent-2 to-primary-accent-1 animate-gradient-x'>
               <div className="bg-primary-main text-base rounded-xl p-1 md:p-4">
 
