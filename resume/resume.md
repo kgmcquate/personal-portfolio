@@ -76,7 +76,7 @@ kgmcquate@gmail.com &nbsp;<bold>|</bold>&nbsp; 330-573-9965 &nbsp;<bold>|</bold>
 
 ## Work Experience
 
-- #### __Senior Consultant__ &nbsp; __|__ &nbsp; [Improving](https://www.linkedin.com/company/improving-enterprises/), Dallas, TX &nbsp; __|__ &nbsp; November 2023
+- #### Senior Consultant &nbsp; | &nbsp; [Improving](https://www.linkedin.com/company/improving-enterprises/), Dallas, TX &nbsp; | &nbsp; November 2023
   
     - _Data Ingestion for [CHS, Inc.](https://www.linkedin.com/company/chs/)_
       - __Projects__:
@@ -86,7 +86,7 @@ kgmcquate@gmail.com &nbsp;<bold>|</bold>&nbsp; 330-573-9965 &nbsp;<bold>|</bold>
       - __Data Topics__: Agriculture, Weather, Customer Surveys
       - __Platforms__: AWS Lambda and StepFunctions, Snowflake
 
-- #### __Senior Big Data Engineer__ &nbsp; __|__ &nbsp; [Bluestem Brands, Inc.](https://www.linkedin.com/company/bluestem-brands/), Eden Prairie, MN &nbsp; __|__ &nbsp; _April 2021 to November 2023_
+- #### Senior Big Data Engineer &nbsp; | &nbsp; [Bluestem Brands, Inc.](https://www.linkedin.com/company/bluestem-brands/), Eden Prairie, MN &nbsp; | &nbsp; _April 2021 to November 2023_
 
     - _Built, tested, supported, and migrated big data pipelines_
       - __Projects__:
@@ -106,7 +106,7 @@ kgmcquate@gmail.com &nbsp;<bold>|</bold>&nbsp; 330-573-9965 &nbsp;<bold>|</bold>
     - __Tools__: Terraform, Python, Typer, Java, Scala, boto3/AWS SDK, IAM, dbx, Databricks Asset Bundles
     - __Platforms__: EMR, EMR Serverless, Databricks
 
-- #### __Data Engineer__ &nbsp; __|__ &nbsp; [Naval Nuclear Laboratory](https://www.linkedin.com/company/naval-nuclear-laboratory/), Niskayuna, NY &nbsp; __|__ &nbsp; July 2019 to April 2021
+- #### Data Engineer&nbsp; | &nbsp; [Naval Nuclear Laboratory](https://www.linkedin.com/company/naval-nuclear-laboratory/), Niskayuna, NY &nbsp; | &nbsp; July 2019 to April 2021
 
   - _Built big data pipelines for scientific data for the US Navy_
       - __Tools__: Spark, Impala, Hive, SQL, Hadoop, Scala, Python, Apache Airflow

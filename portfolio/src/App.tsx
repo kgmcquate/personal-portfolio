@@ -149,7 +149,11 @@ function App() {
                 process.env.PUBLIC_URL + "/linkedin.png",
                 process.env.PUBLIC_URL + "/icons8-resume.svg",
               ]}
-              logoLinks={["https://github.com/kgmcquate", "https://www.linkedin.com/in/kevin-mcquate/", process.env.PUBLIC_URL + "/Resume.pdf"]}
+              logoLinks={[
+                "https://github.com/kgmcquate", 
+                "https://www.linkedin.com/in/kevin-mcquate/", 
+                process.env.PUBLIC_URL + "/resume.pdf"
+            ]}
             />
 
             <div className='p-1.5 rounded-lg bg-gradient-to-tl from-primary-accent-2 to-primary-accent-1 animate-gradient-x'>
