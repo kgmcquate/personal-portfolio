@@ -11,8 +11,9 @@
 }
 } */
 
-    /* font-family: "Arial"; */
+    
 body {
+    font-family: "Arial";
     font-size: 12pt;
     /* color: #0D1B2A; */
 
