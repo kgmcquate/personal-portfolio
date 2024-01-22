@@ -20,8 +20,45 @@ defaults:
     working-directory: portfolio
 
 jobs:
+  build_resume:
+    name: Build resume HTML, PDF and PNG
+    
+    runs-on: ubuntu-latest
+    environment: production
+    container:
+      image: pandoc/extra:latest-ubuntu
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v3
+
+    - name: install wkhtmltopdf
+      working-directory: resume
+      run: |
+        export DEBIAN_FRONTEND=noninteractive
+        wget https://github.com/wkhtmltopdf/packaging/releases/download/0.12.6.1-2/wkhtmltox_0.12.6.1-2.jammy_amd64.deb
+        apt install -y ./wkhtmltox_0.12.6.1-2.jammy_amd64.deb
+    
+    - name: Convert to PDF and PNG
+      working-directory: resume
+      run: |
+        pandoc -f gfm -t html -o resume.html resume.md
+        wkhtmltopdf  resume.html resume.pdf
+        wkhtmltoimage resume.html resume.png
+
+    - uses: actions/upload-artifact@v2
+      with:
+        name: resume.pdf
+        path: resume/resume.pdf
+
+    - uses: actions/upload-artifact@v2
+      with:
+        name: resume.png
+        path: resume/resume.png
+
   deploy:
-    name: Deploy 
+    name: Deploy
+    needs: build_resume
     runs-on: ubuntu-latest
     environment: production
     container:
@@ -37,6 +74,16 @@ jobs:
         aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
         aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         aws-region: ${{ env.AWS_REGION }}
+
+    - uses: actions/download-artifact@v2
+      with:
+        name: resume.pdf
+        path: portfolio/public/resume.pdf
+
+    - uses: actions/download-artifact@v2
+      with:
+        name: resume.png
+        path: portfolio/public/resume.png
 
     - name: npm install
       run: npm install 
