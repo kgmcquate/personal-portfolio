@@ -78,12 +78,12 @@ jobs:
     - uses: actions/download-artifact@v2
       with:
         name: resume.pdf
-        path: portfolio/public/resume.pdf
+        path: portfolio/public/
 
     - uses: actions/download-artifact@v2
       with:
         name: resume.png
-        path: portfolio/public/resume.png
+        path: portfolio/public/
 
     - name: npm install
       run: npm install 

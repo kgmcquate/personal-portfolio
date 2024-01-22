@@ -230,8 +230,8 @@ function App() {
           <div ref={resumeRef} className="bg-primary-light p-1 md:p-4 rounded-lg content-center">
             <h1 className="text-center pb-3">Resume</h1>
             <div className='p-1.5 rounded-lg bg-gradient-to-tl from-primary-light to-primary-darker animate-gradient-x'>
-              <a href={process.env.PUBLIC_URL + "/Resume.pdf"} target="_blank" rel="noreferrer">
-                <img className="p-1 md:p-4 rounded-lg content-center" srcSet={process.env.PUBLIC_URL + "/Resume.png"} alt="resume"></img>
+              <a href={process.env.PUBLIC_URL + "/resume.pdf"} target="_blank" rel="noreferrer">
+                <img className="p-1 md:p-4 rounded-lg content-center" srcSet={process.env.PUBLIC_URL + "/resume.png"} alt="resume"></img>
               </a>
             </div>
           </div>
