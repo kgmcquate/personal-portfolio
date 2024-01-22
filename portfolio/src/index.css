@@ -4,6 +4,7 @@
 
 html {
     min-height: 100%;
-    @apply bg-gradient-to-b from-primary-bg to-primary-darker
+    /* background-image: url("../public/pexels-daniel-absi-952670.jpg"); */
+    @apply bg-gradient-to-br from-primary-dark  to-primary-main
  }
 
