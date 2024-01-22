@@ -11,8 +11,8 @@
 }
 } */
 
+    /* font-family: "Arial"; */
 body {
-    font-family: "Arial";
     font-size: 12pt;
     /* color: #0D1B2A; */
 
@@ -144,5 +144,6 @@ kgmcquate@gmail.com &nbsp;<bold>|</bold>&nbsp; 330-573-9965 &nbsp;<bold>|</bold>
   -  __Link__: [home.kevin-mcquate.net](https://home.kevin-mcquate.net)
   -  __GitHub__: [github.com/kgmcquate/personal-portfolio](https://github.com/kgmcquate/personal-portfolio)
   - __Technologies__: React, Markdown, Pandoc, GitHub Actions, CloudFront
-- __Data Science Projects__ - _Short data science projects for EdX Data Science course_
-    - __Links__: [home.kevin-mcquate.net/solar-panel-data.html](https://home.kevin-mcquate.net/solar-panel-data.html), [home.kevin-mcquate.net/nuclear-plants.html](https://home.kevin-mcquate.net/nuclear-plants.html)
+
+<!-- - __Data Science Projects__ - _Short data science projects for EdX Data Science course_
+    - __Links__: [home.kevin-mcquate.net/solar-panel-data.html](https://home.kevin-mcquate.net/solar-panel-data.html), [home.kevin-mcquate.net/nuclear-plants.html](https://home.kevin-mcquate.net/nuclear-plants.html) -->
