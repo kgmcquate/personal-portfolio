@@ -4,12 +4,38 @@ import { InfoCard } from './components/InfoCard'
 
 import './App.css'
 
-const infoCards = [
+var infoCards = [
+  <InfoCard
+    index={0}
+    heading="dbt-testgen"
+    body="dbt package for auto-generating data tests"
+    className='bg-primary-main'
+    image={process.env.PUBLIC_URL + "/dbt-testgen.png"}
+    link="https://video-streams.kevin-mcquate.net/"
+    logos={[
+      process.env.PUBLIC_URL + "/dbt.png",
+      process.env.PUBLIC_URL + "/snowflake.png",
+      process.env.PUBLIC_URL + "/databricks.png"
+    ]}
+  />,
   <InfoCard
     index={1}
+    heading="Livestream Object Detection"
+    body="ML Object Detection on YouTube Livestreams"
+    className='bg-primary-main'
+    image={process.env.PUBLIC_URL + "/livestream-website.png"}
+    link="https://github.com/kgmcquate/dbt-testgen"
+    logos={[
+      process.env.PUBLIC_URL + "/Apache_Spark_logo.png",
+      process.env.PUBLIC_URL + "/react-logo.png",
+      process.env.PUBLIC_URL + "/pytorch.png"
+    ]}
+  />,
+  <InfoCard
+    index={2}
     heading="Lake Ice Map"
     body="Interactive map for exploring weather and ice on lakes"
-    className='bg-primary-dark'
+    className='bg-primary-main'
     image={process.env.PUBLIC_URL + "/lake-ice-map.png"}
     link="https://lake-freeze.kevin-mcquate.net/"
     logos={[
@@ -19,10 +45,10 @@ const infoCards = [
     ]}
   />,
   <InfoCard
-    index={2}
+    index={3}
     heading="AWS Infrastructure"
     body="Infrastructure written in Terraform for running personal projects"
-    className='bg-primary-light'
+    className='bg-primary-main'
     image={process.env.PUBLIC_URL + "/AWS_network_diagram.svg"}
     link="https://github.com/kgmcquate/infra"
     logos={[
@@ -32,7 +58,7 @@ const infoCards = [
     ]}
   />,
   <InfoCard
-    index={3}
+    index={4}
     heading="Weather Data ETL"
     body="Loads daily weather using Spark on AWS EMR Serverless"
     className='bg-primary-main'
@@ -45,10 +71,10 @@ const infoCards = [
     ]}
   />,
   <InfoCard
-    index={4}
+    index={5}
     heading="Lake Ice API"
     body="REST API built with FastAPI running on AWS Lambda"
-    className='bg-primary-dark'
+    className='bg-primary-main'
     image={process.env.PUBLIC_URL + "/fastapi_screenshot.png"}
     link='https://lake-freeze-api.kevin-mcquate.net/docs'
     logos={[
@@ -57,10 +83,10 @@ const infoCards = [
     ]}
   />,
   <InfoCard
-    index={5}
+    index={6}
     heading="Satellite Image ETL"
     body="Loads daily satellite imagery using Spark on AWS EMR Serverless"
-    className='bg-primary-light'
+    className='bg-primary-main'
     image={process.env.PUBLIC_URL + "/lake.PNG"}
     link='https://github.com/kgmcquate/lake-satellite-image-etl'
     logos={[
@@ -70,7 +96,7 @@ const infoCards = [
     ]}
   />,
   <InfoCard
-    index={6}
+    index={7}
     heading="Snow Cover ML Model"
     body="Predicts snow cover on bodies of water using an XGBoost model"
     className='bg-primary-main'
@@ -82,10 +108,10 @@ const infoCards = [
     ]}
   />,
   <InfoCard
-    index={7}
+    index={8}
     heading="Portfolio Website"
     body="Written with React and Tailwind.css and hosted on AWS CloudFront"
-    className='bg-primary-dark'
+    className='bg-primary-main'
     image={process.env.PUBLIC_URL + "/portfolio_screenshot.png"}
     link='https://home.kevin-mcquate.net/'
     logos={[
@@ -94,10 +120,10 @@ const infoCards = [
     ]}
   />,
   <InfoCard
-    index={8}
+    index={9}
     heading="Solar Plant ML Project"
     body="Jupyter Notebook of my analysis of solar plant data. Completed as part of an EdX course."
-    className='bg-primary-light'
+    className='bg-primary-main'
     image={process.env.PUBLIC_URL + "/solar-plant.png"}
     link={process.env.PUBLIC_URL + "/solar-panel-data.html"}
     logos={[
