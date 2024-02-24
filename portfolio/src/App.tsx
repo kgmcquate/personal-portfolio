@@ -11,7 +11,7 @@ var infoCards = [
     body="dbt package for auto-generating data tests"
     className='bg-primary-main'
     image={process.env.PUBLIC_URL + "/dbt-testgen.png"}
-    link="https://video-streams.kevin-mcquate.net/"
+    link="https://github.com/kgmcquate/dbt-testgen"
     logos={[
       process.env.PUBLIC_URL + "/dbt.png",
       process.env.PUBLIC_URL + "/snowflake.png",
@@ -24,7 +24,7 @@ var infoCards = [
     body="ML Object Detection on YouTube Livestreams"
     className='bg-primary-main'
     image={process.env.PUBLIC_URL + "/livestream-website.png"}
-    link="https://github.com/kgmcquate/dbt-testgen"
+    link="https://video-streams.kevin-mcquate.net/"
     logos={[
       process.env.PUBLIC_URL + "/Apache_Spark_logo.png",
       process.env.PUBLIC_URL + "/react-logo.png",

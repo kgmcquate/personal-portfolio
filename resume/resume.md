@@ -83,8 +83,9 @@ kgmcquate@gmail.com &nbsp;<bold>|</bold>&nbsp; 330-573-9965 &nbsp;<bold>|</bold>
         - Qualtrics Survey REST API integration
         - NOAA Climate Prediction Center REST API integration
         - Other REST API and HVR integrations to Snowflake
-      - __Data Topics__: Agriculture, Weather, Customer Surveys
-      - __Platforms__: AWS Lambda and StepFunctions, Snowflake
+      - __Data Topics__: Agriculture, Weather, Energy
+      - __Platforms__: Snowflake, AWS 
+      - __Tools__: dbt, Python, Terraform, AWS Lambda and StepFunctions, Snowflake Tasks and Streams
 
 - #### Senior Big Data Engineer &nbsp; | &nbsp; [Bluestem Brands, Inc.](https://www.linkedin.com/company/bluestem-brands/), Eden Prairie, MN &nbsp; | &nbsp; _April 2021 to November 2023_
 
@@ -123,7 +124,7 @@ kgmcquate@gmail.com &nbsp;<bold>|</bold>&nbsp; 330-573-9965 &nbsp;<bold>|</bold>
 <hr>
 
 ## Education
-- __B.S. in Nuclear Engineering__ &nbsp; __|__ &nbsp; 3.34 GPA &nbsp; __|__ &nbsp; The Pennsylvania State University, University Park, PA
+- __B.S. in Nuclear Engineering__ &nbsp; __|__ &nbsp; The Pennsylvania State University, University Park, PA
 
 <hr>
 
@@ -133,18 +134,23 @@ kgmcquate@gmail.com &nbsp;<bold>|</bold>&nbsp; 330-573-9965 &nbsp;<bold>|</bold>
   - __GitHub__: [github.com/kgmcquate/dbt-testgen](https://github.com/kgmcquate/dbt-testgen)
   - __Technologies__: DBT, SQL, Jinja, integration testing, Snowflake, RedShift, Databricks, BigQuery, DuckDB
 
-- __Lake Ice Map React App__ - _Interactive map of lake ice thickness predictions_
+- __Livestream Object Detection__ - _Interactive object detection statistics on YouTube Livestreams_
+  - __Link__: [video-streams.kevin-mcquate.net](https://video-streams.kevin-mcquate.net/)
+  - __GitHub__: [github.com/kgmcquate/video-stream-OR-app](https://github.com/kgmcquate/video-stream-OR-app)
+  - __Technologies__: Spark, PyTorch, dbt, React, Airflow, Python 
+
+- __Lake Ice Map__ - _Interactive map of lake ice thickness predictions_
   - __Link__: [lake-freeze.kevin-mcquate.net](https://lake-freeze.kevin-mcquate.net)
-  - __API__: [lake-freeze-api.kevin-mcquate.net/docs](https://lake-freeze-api.kevin-mcquate.net/docs)
   - __ETL__: [github.com/kgmcquate/weather-etl](https://github.com/kgmcquate/weather-etl), [github.com/kgmcquate/lake-satellite-image-etl](https://github.com/kgmcquate/lake-satellite-image-etl)
-  - __Frontend__: [github.com/kgmcquate/lake-freeze-frontend](https://github.com/kgmcquate/lake-freeze-frontend )
-  - __Infrastructure__: [github.com/kgmcquate/infra](https://github.com/kgmcquate/infra)
-  - __Technologies__: FastAPI, React, PySpark, EMR Serverless, GitHub Actions, AWS SAM/CloudFormation, CloudFront, Terraform, Lambda, Python, Docker, RDS, Postgres
+  - __Website__: [github.com/kgmcquate/lake-freeze-frontend](https://github.com/kgmcquate/lake-freeze-frontend ), [lake-freeze-api.kevin-mcquate.net/docs](https://lake-freeze-api.kevin-mcquate.net/docs)
+  - __Technologies__: FastAPI, React, PySpark, EMR, GitHub Actions, AWS SAM, CloudFront, Lambda, Python, Docker, RDS, Postgres
+- __Infrastructure__ - _Infrastructure for personal projects written in Terraform_
+  - __GitHub__: [github.com/kgmcquate/infra](https://github.com/kgmcquate/infra)
 
 - __Personal Portfolio Site__ - _Portfolio of personal projects written with React_
   -  __Link__: [home.kevin-mcquate.net](https://home.kevin-mcquate.net)
-  -  __GitHub__: [github.com/kgmcquate/personal-portfolio](https://github.com/kgmcquate/personal-portfolio)
-  - __Technologies__: React, Markdown, Pandoc, GitHub Actions, CloudFront
+  <!-- -  __GitHub__: [github.com/kgmcquate/personal-portfolio](https://github.com/kgmcquate/personal-portfolio)
+  - __Technologies__: React, Markdown, Pandoc, GitHub Actions, CloudFront -->
 
 <!-- - __Data Science Projects__ - _Short data science projects for EdX Data Science course_
     - __Links__: [home.kevin-mcquate.net/solar-panel-data.html](https://home.kevin-mcquate.net/solar-panel-data.html), [home.kevin-mcquate.net/nuclear-plants.html](https://home.kevin-mcquate.net/nuclear-plants.html) -->
