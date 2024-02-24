@@ -85,7 +85,7 @@ kgmcquate@gmail.com &nbsp;<bold>|</bold>&nbsp; 330-573-9965 &nbsp;<bold>|</bold>
         - Other REST API and HVR integrations to Snowflake
       - __Data Topics__: Agriculture, Weather, Energy
       - __Platforms__: Snowflake, AWS 
-      - __Tools__: dbt, Python, Terraform, AWS Lambda and StepFunctions, Snowflake Tasks and Streams
+      - __Tools__: dbt, Python, Terraform, Lambda, StepFunctions, Snowflake Tasks/Streams
 
 - #### Senior Big Data Engineer &nbsp; | &nbsp; [Bluestem Brands, Inc.](https://www.linkedin.com/company/bluestem-brands/), Eden Prairie, MN &nbsp; | &nbsp; _April 2021 to November 2023_
 
@@ -98,10 +98,10 @@ kgmcquate@gmail.com &nbsp;<bold>|</bold>&nbsp; 330-573-9965 &nbsp;<bold>|</bold>
           - On-prem Hadoop to AWS EMR migration
       - __Data topics__: Marketing, Supply Chain, Customer Credit, Customer Support, Merchandise, …
       - __Data sources__: Kafka, Kinesis, SQL Databases, REST APIs, Parquet, Delta tables, CSV, JSON, CDC
-      - __Tools__: Spark, Python, Scala, Java, RedShift, Lambda, EC2, IAM, Kinesis, MS SQL, Kafka, ActiveBatch
+      - __Tools__: Spark, Python, Scala, Java, RedShift, Lambda, EC2, IAM, Kinesis, MS SQL, Kafka
       - __Platforms__: AWS, EMR, Databricks
   - _Built and maintained CI/CD pipelines for the Big Data team_
-    - __Tools__: Git, Docker, CloudFormation, Terraform, PyPI, Maven, Bash, Unit Testing, AWS ECR, Python/Java build tools
+    - __Tools__: Docker, CloudFormation, Terraform, Unit Testing, Python/Java build tools
     - __Platforms__: GitLab, Azure DevOps
   - _Built developer tooling and set up big data platforms_
     - __Tools__: Terraform, Python, Typer, Java, Scala, boto3/AWS SDK, IAM, dbx, Databricks Asset Bundles
@@ -130,9 +130,9 @@ kgmcquate@gmail.com &nbsp;<bold>|</bold>&nbsp; 330-573-9965 &nbsp;<bold>|</bold>
 
 ## Personal Projects
 - __dbt-testgen__ - _Open-source DBT package for autogenerating DBT tests_
-  - __Link__: [hub.getdbt.com/kgmcquate/testgen](https://hub.getdbt.com/kgmcquate/testgen)
+  <!-- - __Link__: [hub.getdbt.com/kgmcquate/testgen](https://hub.getdbt.com/kgmcquate/testgen) -->
   - __GitHub__: [github.com/kgmcquate/dbt-testgen](https://github.com/kgmcquate/dbt-testgen)
-  - __Technologies__: DBT, SQL, Jinja, integration testing, Snowflake, RedShift, Databricks, BigQuery, DuckDB
+  - __Technologies__: dbt, integration tests, Snowflake, RedShift, Databricks, BigQuery, DuckDB
 
 - __Livestream Object Detection__ - _Interactive object detection statistics on YouTube Livestreams_
   - __Link__: [video-streams.kevin-mcquate.net](https://video-streams.kevin-mcquate.net/)
