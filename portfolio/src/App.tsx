@@ -149,16 +149,15 @@ function App() {
   return (
     <div className='text-lg'>
       <div className='invisible xl:visible fixed top-0 w-24 h-full m-6 '>
-        <div className="rounded-lg p-1.5 bg-gradient-to-b from-primary-dark to-primary-darker">
-          <div className='grid grid-flow-row gap-4 rounded-lg bg-primary-main  pt-4 pb-4 '>
-
-            <button className="rounded-full " onClick={() => scrollToRef(personalProjectsRef)} >Personal Projects</button>
+        {/* <div className="rounded-sm "> */}
+          <div className='grid grid-flow-row gap-6 rounded-sm  bg-primary-main pt-4 pb-4 '>
+            <button className="rounded-sm" onClick={() => scrollToRef(personalProjectsRef)} >Personal Projects</button>
             <hr></hr>
-            <button className="rounded-full" onClick={() => scrollToRef(coverLetterRef)}>Cover Letter</button>
+            <button className="rounded-sm" onClick={() => scrollToRef(coverLetterRef)}>Cover Letter</button>
             <hr ></hr>
-            <button className="rounded-full" onClick={() => scrollToRef(resumeRef)} >Resume</button>
+            <button className="rounded-sm" onClick={() => scrollToRef(resumeRef)} >Resume</button>
           </div>
-        </div>
+        {/* </div> */}
       </div>
       <div className='font-display text-2xl text-primary-text'>
         <div className=" mx-auto max-w-6xl grid grid-cols-1 gap-4 p-1 md:p-4" >
@@ -168,7 +167,7 @@ function App() {
               heading="Kevin McQuate"
               body={<ul ><li style={{ marginBottom: "10px" }}>Big Data and Software Engineer</li><li>kgmcquate@gmail.com</li></ul>}
               className="bg-primary-main text-left"
-              image={<img className="h-44 w-44 rounded-lg border-2 border-primary-light shadow-2xl" srcSet={process.env.PUBLIC_URL + "/profile.jpg"} alt='profile' />}
+              image={<img className="h-44 w-44 rounded-lg border-2 c shadow-2xl" srcSet={process.env.PUBLIC_URL + "/profile.jpg"} alt='profile' />}
               imageLink='https://www.linkedin.com/in/kevin-mcquate/'
               logos={[
                 process.env.PUBLIC_URL + "/github.png",
@@ -205,10 +204,10 @@ function App() {
           </div>
 
 
-          <div ref={coverLetterRef} className="bg-primary-dark p-1 md:p-4 rounded-lg content-center">
+          <div ref={coverLetterRef} className="bg-primary-dark p-1 md:p-4 rounded-sm content-center">
             <h1 className="text-center  mb-4">About Me</h1>
-            <div className='p-1.5 rounded-lg bg-gradient-to-tl from-primary-accent-2 to-primary-accent-1 animate-gradient-x'>
-              <div className="bg-primary-main text-base rounded-xl p-1 md:p-4">
+            <div className='p-1.5 rounded-sm bg-gradient-to-tl from-primary-accent-2 to-primary-accent-1 animate-gradient-x'>
+              <div className="bg-primary-main text-base rounded-sm p-1 md:p-4">
 
                 <div>
                   {/* <h1>To whom it may concern,</h1> */}
@@ -257,11 +256,11 @@ function App() {
             </div>
           </div>
 
-          <div ref={resumeRef} className="bg-primary-light p-1 md:p-4 rounded-lg content-center">
+          <div ref={resumeRef} className="bg-primary-light p-1 md:p-4 rounded-sm content-center">
             <h1 className="text-center pb-3">Resume</h1>
             <div className='p-1.5 rounded-lg bg-gradient-to-tl from-primary-light to-primary-darker animate-gradient-x'>
               <a href={process.env.PUBLIC_URL + "/resume.pdf"} target="_blank" rel="noreferrer">
-                <img className="p-1 md:p-4 rounded-lg content-center" srcSet={process.env.PUBLIC_URL + "/resume.png"} alt="resume"></img>
+                <img className="p-1 md:p-4 rounded-sm content-center" srcSet={process.env.PUBLIC_URL + "/resume.png"} alt="resume"></img>
               </a>
             </div>
           </div>

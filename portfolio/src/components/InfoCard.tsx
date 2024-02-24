@@ -47,10 +47,10 @@ export function InfoCard(
   return (
     // p-6 max-w-sm mx-auto bg-white rounded-xl shadow-lg flex items-center space-x-4
     <a href={link} target='_blank' rel='noreferrer'>
-      <div className={` rounded-lg p-1.5 h-full ${borderGradientClass} ${animationBorderAnimationClass}`}>
+      <div className={` rounded-sm p-1.5 h-full ${borderGradientClass} ${animationBorderAnimationClass}`}>
         <div className={
           className +
-          ` h-full overflow-clip grid grid-cols-2 p-2 gap-2 rounded-lg
+          ` h-full overflow-clip grid grid-cols-2 p-2 gap-2 rounded-sm
             md:brightness-100 lg:brightness-90 
             transition duration-100 ease hover:brightness-100 hover:shadow-2xl
             
@@ -63,7 +63,7 @@ export function InfoCard(
                 typeof image === 'string' ?
                   <img
                     srcSet={image}
-                    className="rounded-lg h-44 w-auto" //
+                    className="rounded-sm h-44 w-auto" //
                     alt={heading}
                   />
                   : image
