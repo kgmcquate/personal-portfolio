@@ -76,6 +76,13 @@ kgmcquate@gmail.com &nbsp;<bold>|</bold>&nbsp; 330-573-9965 &nbsp;<bold>|</bold>
 
 ## Work Experience
 
+- #### Big Data Software Engineer &nbsp; | &nbsp; [Improving](https://www.linkedin.com/company/improving-enterprises/), Jacksonville, FL &nbsp; | &nbsp; May 2024
+  - __Projects__:
+  - Healthcare Provider Data Pipeline
+  - __Data Topics__: Healthcare
+  - __Platforms__: AWS 
+  - __Tools__: Spark, EMR, Airflow, Terraform
+
 - #### Senior Consultant &nbsp; | &nbsp; [Improving](https://www.linkedin.com/company/improving-enterprises/), Dallas, TX &nbsp; | &nbsp; November 2023
   
     - _Data Ingestion for [CHS, Inc.](https://www.linkedin.com/company/chs/)_
