@@ -32,6 +32,18 @@ var infoCards = [
     ]}
   />,
   <InfoCard
+    index={1}
+    heading="Spark Livestream Reader"
+    body="Spark Structured Streaming Reader for YouTube Livestreams"
+    className='bg-primary-main'
+    image={process.env.PUBLIC_URL + "/spark-livestream-reader.png"}
+    link="https://github.com/kgmcquate/spark-livestream-reader"
+    logos={[
+      process.env.PUBLIC_URL + "/Apache_Spark_logo.png",
+      process.env.PUBLIC_URL + "/Scala-full-color.svg.png"
+    ]}
+  />,
+  <InfoCard
     index={2}
     heading="Lake Ice Map"
     body="Interactive map for exploring weather and ice on lakes"
