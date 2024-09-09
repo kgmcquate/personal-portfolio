@@ -77,11 +77,10 @@ kgmcquate@gmail.com &nbsp;<bold>|</bold>&nbsp; 330-573-9965 &nbsp;<bold>|</bold>
 ## Work Experience
 
 - #### Big Data Software Engineer &nbsp; | &nbsp; [Availity](https://www.linkedin.com/company/availity/), Jacksonville, FL &nbsp; | &nbsp; May 2024
-  - __Projects__:
-  - Healthcare Provider Data Pipeline
-  - __Data Topics__: Healthcare
+  - __Project__: Healthcare Provider Entity Resolution
+  - __Data Topics__: Healthcare, Geolocation
   - __Platforms__: AWS 
-  - __Tools__: Spark, EMR, Airflow, Terraform
+  - __Tools__: Spark, EMR, Airflow, Terraform, Gitlab CI/CD
 
 - #### Senior Consultant &nbsp; | &nbsp; [Improving](https://www.linkedin.com/company/improving-enterprises/), Dallas, TX &nbsp; | &nbsp; November 2023
   
