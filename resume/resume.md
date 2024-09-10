@@ -81,6 +81,8 @@ kgmcquate@gmail.com &nbsp;<bold>|</bold>&nbsp; 330-573-9965 &nbsp;<bold>|</bold>
       - __Data Topics__: Healthcare, Geolocation
       - __Platforms__: AWS, EMR, Airflow
       - __Tools__: Spark, Terraform, Gitlab CI/CD
+    - _Designed and Built Integration Testing Piplelines_
+      - __Tools__: Testcontainers, LocalStack, moto, Gitlab CI/CD
 
 - #### Senior Consultant &nbsp; | &nbsp; [Improving](https://www.linkedin.com/company/improving-enterprises/), Dallas, TX &nbsp; | &nbsp; _November 2023_
   
