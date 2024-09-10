@@ -106,14 +106,14 @@ kgmcquate@gmail.com &nbsp;<bold>|</bold>&nbsp; 330-573-9965 &nbsp;<bold>|</bold>
           - On-prem Hadoop to AWS EMR migration
       - __Data topics__: Marketing, Supply Chain, Customer Credit, Customer Support, Merchandise, …
       - __Data sources__: Kafka, Kinesis, SQL Databases, REST APIs, Parquet, Delta tables, CSV, JSON, CDC
-      - __Tools__: Spark, Python, Scala, Java, RedShift, Lambda, EC2, IAM, Kinesis, MS SQL, Kafka
       - __Platforms__: AWS, EMR, Databricks
+      - __Tools__: Spark, Python, Scala, Java, RedShift, Lambda, EC2, IAM, Kinesis, MS SQL, Kafka
   - _Built and maintained CI/CD pipelines for the Big Data team_
-    - __Tools__: Docker, CloudFormation, Terraform, Python/Java build tools
     - __Platforms__: GitLab, Azure DevOps
+    - __Tools__: Docker, CloudFormation, Terraform, Python/Java build tools
   - _Built developer tooling and set up big data platforms_
-    - __Tools__: Terraform, Python, Typer, Java, Scala, boto3/AWS SDK, IAM, Databricks Asset Bundles
     - __Platforms__: EMR, EMR Serverless, Databricks
+    - __Tools__: Terraform, Python, Typer, Java, Scala, boto3/AWS SDK, IAM, Databricks Asset Bundles
 
 - #### Data Engineer&nbsp; | &nbsp; [Naval Nuclear Laboratory](https://www.linkedin.com/company/naval-nuclear-laboratory/), Niskayuna, NY &nbsp; | &nbsp; _July 2019_
 
