@@ -143,6 +143,10 @@ kgmcquate@gmail.com &nbsp;<bold>|</bold>&nbsp; 330-573-9965 &nbsp;<bold>|</bold>
   - __GitHub__: [github.com/kgmcquate/dbt-testgen](https://github.com/kgmcquate/dbt-testgen)
   - __Technologies__: dbt, integration tests, Snowflake, RedShift, Databricks, BigQuery, DuckDB
 
+- __EMR Serverless Open-source Contribution to moto__
+  - __GitHub PR__: https://github.com/getmoto/moto/pull/7671
+
+
 - __Livestream Object Detection__ - _Interactive object detection statistics on YouTube Livestreams_
   - __Link__: [video-streams.kevin-mcquate.net](https://video-streams.kevin-mcquate.net/)
   - __GitHub__: [github.com/kgmcquate/video-stream-OR-app](https://github.com/kgmcquate/video-stream-OR-app)
