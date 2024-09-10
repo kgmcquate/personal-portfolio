@@ -14,12 +14,12 @@
     
 body {
     font-family: "Arial";
-    font-size: 12pt;
+    font-size: 11pt;
     /* color: #0D1B2A; */
 
 }
 h1, h2, h3, h4, h5, h6 {
-    margin: 4px;
+    margin: 2px;
 }
 h1 {
     text-align: center;
@@ -44,10 +44,10 @@ p {
 ul {
     /* display: block; */
     /* list-style-type: disc; */
-    margin: 2px;
+    margin: 0px;
     /* margin-block-start: -15px; */
     margin-block-end: 0px;
-    margin-inline-start: 20px !important; 
+    margin-inline-start: 18px !important; 
     margin-inline-end: 0px; 
     padding-inline-start: 0px !important; 
     list-style: none;
@@ -72,19 +72,19 @@ ul > li > ul {
 kgmcquate@gmail.com &nbsp;<bold>|</bold>&nbsp; 330-573-9965 &nbsp;<bold>|</bold>&nbsp; <a href="https://home.kevin-mcquate.net">home.kevin-mcquate.net</a>
 </div>
 
-<hr>
+<!-- <hr> -->
 
 ## Work Experience
 
-- #### Big Data Software Engineer &nbsp; | &nbsp; [Availity](https://www.linkedin.com/company/availity/), Jacksonville, FL &nbsp; | &nbsp; May 2024
-    - _Healthcare Provider Data Harmonization and Entity Resolution_
+- #### Big Data Software Engineer &nbsp; | &nbsp; [Availity](https://www.linkedin.com/company/availity/), Jacksonville, FL &nbsp; | &nbsp; _May 2024_
+    - _Built Healthcare Provider Data Harmonization Pipeline_
       - __Data Topics__: Healthcare, Geolocation
       - __Platforms__: AWS, EMR, Airflow
       - __Tools__: Spark, Terraform, Gitlab CI/CD
 
-- #### Senior Consultant &nbsp; | &nbsp; [Improving](https://www.linkedin.com/company/improving-enterprises/), Dallas, TX &nbsp; | &nbsp; November 2023
+- #### Senior Consultant &nbsp; | &nbsp; [Improving](https://www.linkedin.com/company/improving-enterprises/), Dallas, TX &nbsp; | &nbsp; _November 2023_
   
-    - _Enterprise Data Ingestion for [CHS, Inc.](https://www.linkedin.com/company/chs/)_
+    - _Built Enterprise Data Ingestion Pipelines for [CHS, Inc.](https://www.linkedin.com/company/chs/)_
       - __Projects__:
         - Qualtrics Survey REST API integration
         - NOAA Climate Prediction Center REST API integration
@@ -93,7 +93,7 @@ kgmcquate@gmail.com &nbsp;<bold>|</bold>&nbsp; 330-573-9965 &nbsp;<bold>|</bold>
       - __Platforms__: Snowflake, AWS 
       - __Tools__: dbt, Python, Terraform, Lambda, StepFunctions, Snowflake Tasks/Streams
 
-- #### Senior Big Data Engineer &nbsp; | &nbsp; [Bluestem Brands, Inc.](https://www.linkedin.com/company/bluestem-brands/), Eden Prairie, MN &nbsp; | &nbsp; _April 2021 to November 2023_
+- #### Senior Big Data Engineer &nbsp; | &nbsp; [Bluestem Brands, Inc.](https://www.linkedin.com/company/bluestem-brands/), Eden Prairie, MN &nbsp; | &nbsp; _April 2021_
 
     - _Built, tested, supported, and migrated big data pipelines_
       - __Projects__:
@@ -107,13 +107,13 @@ kgmcquate@gmail.com &nbsp;<bold>|</bold>&nbsp; 330-573-9965 &nbsp;<bold>|</bold>
       - __Tools__: Spark, Python, Scala, Java, RedShift, Lambda, EC2, IAM, Kinesis, MS SQL, Kafka
       - __Platforms__: AWS, EMR, Databricks
   - _Built and maintained CI/CD pipelines for the Big Data team_
-    - __Tools__: Docker, CloudFormation, Terraform, Unit Testing, Python/Java build tools
+    - __Tools__: Docker, CloudFormation, Terraform, Python/Java build tools
     - __Platforms__: GitLab, Azure DevOps
   - _Built developer tooling and set up big data platforms_
-    - __Tools__: Terraform, Python, Typer, Java, Scala, boto3/AWS SDK, IAM, dbx, Databricks Asset Bundles
+    - __Tools__: Terraform, Python, Typer, Java, Scala, boto3/AWS SDK, IAM, Databricks Asset Bundles
     - __Platforms__: EMR, EMR Serverless, Databricks
 
-- #### Data Engineer&nbsp; | &nbsp; [Naval Nuclear Laboratory](https://www.linkedin.com/company/naval-nuclear-laboratory/), Niskayuna, NY &nbsp; | &nbsp; July 2019 to April 2021
+- #### Data Engineer&nbsp; | &nbsp; [Naval Nuclear Laboratory](https://www.linkedin.com/company/naval-nuclear-laboratory/), Niskayuna, NY &nbsp; | &nbsp; _July 2019_
 
   - _Built big data pipelines for scientific data for the US Navy_
       - __Tools__: Spark, Scala, Python, SQL, Impala, Hive
