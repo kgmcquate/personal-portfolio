@@ -67,7 +67,7 @@ ul > li > ul {
 }
 </style>
 
-# Kevin G. McQuate, Big Data/Software Engineer
+# Kevin G. McQuate, Big Data Software Engineer
 <div class="centered">
 kgmcquate@gmail.com &nbsp;<bold>|</bold>&nbsp; 330-573-9965 &nbsp;<bold>|</bold>&nbsp; <a href="https://home.kevin-mcquate.net">home.kevin-mcquate.net</a>
 </div>
@@ -77,14 +77,14 @@ kgmcquate@gmail.com &nbsp;<bold>|</bold>&nbsp; 330-573-9965 &nbsp;<bold>|</bold>
 ## Work Experience
 
 - #### Big Data Software Engineer &nbsp; | &nbsp; [Availity](https://www.linkedin.com/company/availity/), Jacksonville, FL &nbsp; | &nbsp; May 2024
-    - _Healthcare Provider Entity Resolution_
+    - _Healthcare Provider Data Harmonization and Entity Resolution_
       - __Data Topics__: Healthcare, Geolocation
-      - __Platforms__: AWS 
-      - __Tools__: Spark, EMR, Airflow, Terraform, Gitlab CI/CD
+      - __Platforms__: AWS, EMR, Airflow
+      - __Tools__: Spark, Terraform, Gitlab CI/CD
 
 - #### Senior Consultant &nbsp; | &nbsp; [Improving](https://www.linkedin.com/company/improving-enterprises/), Dallas, TX &nbsp; | &nbsp; November 2023
   
-    - _Data Ingestion for [CHS, Inc.](https://www.linkedin.com/company/chs/)_
+    - _Enterprise Data Ingestion for [CHS, Inc.](https://www.linkedin.com/company/chs/)_
       - __Projects__:
         - Qualtrics Survey REST API integration
         - NOAA Climate Prediction Center REST API integration
@@ -116,7 +116,8 @@ kgmcquate@gmail.com &nbsp;<bold>|</bold>&nbsp; 330-573-9965 &nbsp;<bold>|</bold>
 - #### Data Engineer&nbsp; | &nbsp; [Naval Nuclear Laboratory](https://www.linkedin.com/company/naval-nuclear-laboratory/), Niskayuna, NY &nbsp; | &nbsp; July 2019 to April 2021
 
   - _Built big data pipelines for scientific data for the US Navy_
-      - __Tools__: Spark, Impala, Hive, SQL, Hadoop, Scala, Python, Apache Airflow
+      - __Tools__: Spark, Scala, Python, SQL, Impala, Hive
+      - __Platforms__: Cloudera Hadoop, Airflow
   - _Designed, built, and maintained web UIs for data manipulation and access_
       - __Tools__: Javascript/HTML/CSS, Python, Django, Docker Compose
 
